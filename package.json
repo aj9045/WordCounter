@@ -7,4 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AJ Stuhrenberg",
+  "dependencies": {
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.14.1"
+  }
 }
