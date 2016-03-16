@@ -5,7 +5,7 @@ export default class TextBox extends Component {
     return (
       <div>
         <textarea placeholder="Paste text here" onChange={this.props.changeText}></textarea>
-        <input type="submit" value="Count" />
+        <input type="submit" value="Count" onClick={this.props.getCount} />
       </div>
     );
   }
