@@ -1,3 +1,19 @@
 body {
   background-color: lightblue;
 }
+
+.container {
+  margin: 90px auto;
+  width: 75%;
+}
+
+.textBox {
+
+}
+
+.textBox__textArea {
+  margin: 20px auto;
+  display: block;
+  width: 80%;
+  min-height: 400px;
+}
