@@ -24,6 +24,19 @@ class App extends Component {
   _changeText(event) {
     this.setState({text: event.target.value});
   }
+
+  _getCount() {
+    var text = this.state.text;
+    var changedText = text.replace(/[^\d\w\s]/g, "");
+    var changedTextUnderscore = changedText.replace(/_/g, "");
+    var finalText = changedTextUnderscore.replace(/\s\s+/g, " ");
+
+    var splitFinalText = finalText.split(" ");
+
+    var count = (splitFinalText[splitFinalText.length - 1] === "") ? splitFinalText.length - 1 : splitFinalText.length;
+
+    this.setState({count: count});
+  }
 }
 
 ReactDOM.render(<App />, document.querySelector(".container"));
