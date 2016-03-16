@@ -4,7 +4,7 @@ export default class ShowCount extends Component {
   render() {
     return (
       <div>
-        Show count here
+        Word Count: {this.props.count}
       </div>
     );
   }
