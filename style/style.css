@@ -17,3 +17,31 @@ body {
   width: 80%;
   min-height: 400px;
 }
+
+.textBox__button {
+  background-color: #47b1d1;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  border: 1px solid #3391ab;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 12px 26px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #205763;
+}
+.textBox__button:hover {
+  background-color: #3498ba;
+}
+
+.textBox__button:active {
+  position: relative;
+  top: 1px;
+}
+
+.textBox__button:focus {
+  outline: none;
+}
