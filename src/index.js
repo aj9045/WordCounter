@@ -22,11 +22,11 @@ class App extends Component {
   }
 
   _changeText(event) {
+    this._getCount(event.target.value)
     this.setState({text: event.target.value});
   }
 
-  _getCount() {
-    var text = this.state.text;
+  _getCount(text) {
     var changedText = text.replace(/[^\d\w\s]/g, "");
     var changedTextUnderscore = changedText.replace(/_/g, "");
     var finalText = changedTextUnderscore.replace(/\s\s+/g, " ");
