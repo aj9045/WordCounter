@@ -33,6 +33,13 @@ class App extends Component {
 
     var splitFinalText = finalText.replace(/\n/g, " ").split(" ");
 
+    if (splitFinalText.join("") === "") {
+      splitFinalText = [];
+    }
+    else if (splitFinalText[0] === "") {
+      splitFinalText.shift();
+    }
+
     var count = (splitFinalText[splitFinalText.length - 1] === "") ? splitFinalText.length - 1 : splitFinalText.length;
 
     this.setState({count: count});
