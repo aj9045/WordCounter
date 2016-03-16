@@ -3,8 +3,16 @@ body {
 }
 
 .container {
-  margin: 90px auto;
+  margin: 40px auto;
   width: 75%;
+}
+
+.appTitle {
+  font-family: "Coming Soon", cursive;
+  font-weight: normal;
+  font-size: 3em;
+  color: #242829;
+  text-align: center;
 }
 
 .textBox {
