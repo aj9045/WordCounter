@@ -31,7 +31,7 @@ class App extends Component {
     var changedTextUnderscore = changedText.replace(/_/g, "");
     var finalText = changedTextUnderscore.replace(/\s\s+/g, " ");
 
-    var splitFinalText = finalText.split(" ");
+    var splitFinalText = finalText.replace(/\n/g, " ").split(" ");
 
     var count = (splitFinalText[splitFinalText.length - 1] === "") ? splitFinalText.length - 1 : splitFinalText.length;
 
