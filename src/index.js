@@ -15,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <h1 className="appTitle">Word Count Tool</h1>
         <TextBox changeText={this._changeText.bind(this)} getCount={this._getCount.bind(this)} />
         <ShowCount count={this.state.count} />
       </div>
