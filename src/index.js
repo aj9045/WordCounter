@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <TextBox changeText={this._changeText.bind(this)} getCount={this._getCount.bind(this)} />
-        <ShowCount />
+        <ShowCount count={this.state.count} />
       </div>
     );
   }
