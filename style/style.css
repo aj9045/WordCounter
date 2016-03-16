@@ -28,12 +28,30 @@ body {
   padding: 13px;
 }
 
+::-webkit-input-placeholder {
+  font-family: "Coming Soon", cursive;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: "Coming Soon", cursive;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-family: "Coming Soon", cursive;
+}
+
+:-ms-input-placeholder {
+  font-family: "Coming Soon", cursive;
+}
+
 .showCount {
   margin: 20px auto;
   width: 80%;
   background-color: #3CABC9;
   padding: 15px 0;
   color: #242829;
+  font-family: "Coming Soon", cursive;
+  font-size: 1.5em;
 }
 
 .showCount__wordTitle {
