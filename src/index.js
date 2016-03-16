@@ -7,10 +7,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TextBox />
+        <TextBox changeText={this._changeText} />
         <ShowCount />
       </div>
     );
+  }
+
+  _changeText(event) {
+    console.log(event.target.value);
   }
 }
 
